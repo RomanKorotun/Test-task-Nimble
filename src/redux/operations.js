@@ -42,3 +42,27 @@ export const deleteContact = createAsyncThunk(
     }
   }
 );
+
+export const oneGetContact = createAsyncThunk(
+  "contact/oneGetContact",
+  async (contactId, thunkApi) => {
+    try {
+      const response = await axios.get(`/contact/${contactId}`);
+      return response.data;
+    } catch (error) {
+      return thunkApi.rejectWithValue(error.message);
+    }
+  }
+);
+
+export const updateContact = createAsyncThunk(
+  "contact/updateContact",
+  async ({ contactId, tagsObj }, thunkApi) => {
+    try {
+      const response = await axios.put(`/contacts/${contactId}/tags`, tagsObj);
+      return response.data;
+    } catch (error) {
+      return thunkApi.rejectWithValue(error.message);
+    }
+  }
+);

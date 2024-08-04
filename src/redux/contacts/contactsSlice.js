@@ -5,6 +5,7 @@ const contactsSlice = createSlice({
   name: "contacts",
   initialState: {
     items: [],
+    item: null,
     loading: false,
     error: false,
   },
