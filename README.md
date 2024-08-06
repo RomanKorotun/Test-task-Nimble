@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Technical requirements:
+Language: JavaScript
+Stack: React, React Router, Redux Toolkit, Redux Toolkit Query
+
+Library:
+
+- react-router-dom
+- react-redux
+- @reduxjs/toolkit
+- styled-components
+- formik
+- yup
+
+This helps to avoid CORS (Cross-Origin Resource Sharing) issues.
+For a certified application, you can use https://cors-anywhere.herokuapp.com/corsdemo or any alternatives to avoid CORS issues.
