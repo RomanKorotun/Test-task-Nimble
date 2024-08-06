@@ -8,7 +8,7 @@ const NotFoundPage = lazy(() => import("../page/NotFoundPage/NotFoundPage"));
 
 export const App = () => {
   return (
-    <Routes basename="/Test-task-Nimble">
+    <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<ContactsPage />} />
         <Route path="contact/:contactId" element={<OneContactPage />} />
