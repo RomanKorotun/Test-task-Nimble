@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[383],{383:(e,s,n)=>{n.r(s),n.d(s,{default:()=>h});var t,a=n(528);const c=n(464).Ay.div(t||(t=(0,a.A)(["\n  display: flex;\n  justify-content: center;\n"])));var p=n(475),d=n(579);const h=()=>(0,d.jsx)(c,{children:(0,d.jsxs)("div",{children:["Such a page does not exist. Please go to the\xa0",(0,d.jsx)(p.N_,{to:"/",children:"homepage"})]})})}}]);
+//# sourceMappingURL=383.a0fa0833.chunk.js.map

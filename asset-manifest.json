@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Test-task-Nimble/static/css/main.7cda0caf.css",
+    "main.js": "/Test-task-Nimble/static/js/main.7e03b6dc.js",
+    "static/js/402.3fc147c2.chunk.js": "/Test-task-Nimble/static/js/402.3fc147c2.chunk.js",
+    "static/js/694.320625fa.chunk.js": "/Test-task-Nimble/static/js/694.320625fa.chunk.js",
+    "static/js/383.a0fa0833.chunk.js": "/Test-task-Nimble/static/js/383.a0fa0833.chunk.js",
+    "static/js/453.ed3810f9.chunk.js": "/Test-task-Nimble/static/js/453.ed3810f9.chunk.js",
+    "static/js/892.ee3fc68d.chunk.js": "/Test-task-Nimble/static/js/892.ee3fc68d.chunk.js",
+    "static/js/899.aced692b.chunk.js": "/Test-task-Nimble/static/js/899.aced692b.chunk.js",
+    "index.html": "/Test-task-Nimble/index.html",
+    "static/media/sprite.svg": "/Test-task-Nimble/static/media/sprite.b0b292dff3565145614516b0e39a8ebc.svg",
+    "main.7cda0caf.css.map": "/Test-task-Nimble/static/css/main.7cda0caf.css.map",
+    "main.7e03b6dc.js.map": "/Test-task-Nimble/static/js/main.7e03b6dc.js.map",
+    "402.3fc147c2.chunk.js.map": "/Test-task-Nimble/static/js/402.3fc147c2.chunk.js.map",
+    "694.320625fa.chunk.js.map": "/Test-task-Nimble/static/js/694.320625fa.chunk.js.map",
+    "383.a0fa0833.chunk.js.map": "/Test-task-Nimble/static/js/383.a0fa0833.chunk.js.map",
+    "453.ed3810f9.chunk.js.map": "/Test-task-Nimble/static/js/453.ed3810f9.chunk.js.map",
+    "892.ee3fc68d.chunk.js.map": "/Test-task-Nimble/static/js/892.ee3fc68d.chunk.js.map",
+    "899.aced692b.chunk.js.map": "/Test-task-Nimble/static/js/899.aced692b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cda0caf.css",
+    "static/js/main.7e03b6dc.js"
+  ]
+}
