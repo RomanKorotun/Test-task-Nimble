@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Test-task-Nimble/static/css/main.7cda0caf.css",
-    "main.js": "/Test-task-Nimble/static/js/main.7e03b6dc.js",
+    "main.js": "/Test-task-Nimble/static/js/main.3638d905.js",
     "static/js/402.3fc147c2.chunk.js": "/Test-task-Nimble/static/js/402.3fc147c2.chunk.js",
     "static/js/694.320625fa.chunk.js": "/Test-task-Nimble/static/js/694.320625fa.chunk.js",
     "static/js/383.a0fa0833.chunk.js": "/Test-task-Nimble/static/js/383.a0fa0833.chunk.js",
@@ -11,7 +11,7 @@
     "index.html": "/Test-task-Nimble/index.html",
     "static/media/sprite.svg": "/Test-task-Nimble/static/media/sprite.b0b292dff3565145614516b0e39a8ebc.svg",
     "main.7cda0caf.css.map": "/Test-task-Nimble/static/css/main.7cda0caf.css.map",
-    "main.7e03b6dc.js.map": "/Test-task-Nimble/static/js/main.7e03b6dc.js.map",
+    "main.3638d905.js.map": "/Test-task-Nimble/static/js/main.3638d905.js.map",
     "402.3fc147c2.chunk.js.map": "/Test-task-Nimble/static/js/402.3fc147c2.chunk.js.map",
     "694.320625fa.chunk.js.map": "/Test-task-Nimble/static/js/694.320625fa.chunk.js.map",
     "383.a0fa0833.chunk.js.map": "/Test-task-Nimble/static/js/383.a0fa0833.chunk.js.map",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.7e03b6dc.js"
+    "static/js/main.3638d905.js"
   ]
 }
