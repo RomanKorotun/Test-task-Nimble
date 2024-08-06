@@ -10,8 +10,11 @@ import {
   LabelTitle,
   TitleForm,
 } from "./ContactsForm.styled";
-import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/operations";
+
+import {
+  useGetContactsQuery,
+  useAddContactMutation,
+} from "../../redux/apiSlice";
 
 const RegexpEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -30,7 +33,8 @@ const ContactSchema = Yup.object().shape({
 });
 
 export const ContactsForm = () => {
-  const dispatch = useDispatch();
+  const [addContact] = useAddContactMutation();
+  const { refetch } = useGetContactsQuery();
   return (
     <ContactsFormCard>
       <TitleForm>Create Contact</TitleForm>
@@ -41,34 +45,21 @@ export const ContactsForm = () => {
           email: "",
         }}
         validationSchema={ContactSchema}
-        onSubmit={(values, actions) => {
-          dispatch(
-            addContact({
-              fields: {
-                "first name": [
-                  {
-                    value: values.firstName,
-                  },
-                ],
-                "last name": [
-                  {
-                    value: values.lastName,
-                  },
-                ],
-                email: [
-                  {
-                    value: values.email,
-                  },
-                ],
-              },
-              record_type: "person",
-              privacy: {
-                edit: null,
-                read: null,
-              },
-              owner_id: null,
-            })
-          );
+        onSubmit={async (values, actions) => {
+          await addContact({
+            fields: {
+              "first name": [{ value: values.firstName }],
+              "last name": [{ value: values.lastName }],
+              email: [{ value: values.email }],
+            },
+            record_type: "person",
+            privacy: {
+              edit: null,
+              read: null,
+            },
+            owner_id: null,
+          });
+          await refetch();
           actions.resetForm();
         }}
       >

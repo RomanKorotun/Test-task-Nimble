@@ -1,4 +1,3 @@
-import { useContact } from "../../hooks/useContact";
 import {
   FirstName,
   Image,
@@ -11,31 +10,31 @@ import {
   UserWrapper,
 } from "./OneContact.styled";
 
-export const OneContact = () => {
-  const { contact } = useContact();
+export const OneContact = ({ contact }) => {
+  console.log(contact);
   return (
     <>
       <OneContactWrapper>
         <UserWrapper>
-          <Image src={contact?.avatar_url} alt="avatar" />
+          <Image src={contact[0].avatar_url} alt="avatar" />
           <InfoUser>
             <div>
               <FirstName>
-                {contact?.fields?.["first name"]?.[0]?.value}
+                {contact[0].fields?.["first name"][0].value}
               </FirstName>
               &nbsp;
-              <LastName>{contact?.fields?.["last name"]?.[0]?.value}</LastName>
+              <LastName>{contact[0].fields["last name"][0].value}</LastName>
             </div>
-            <p>{contact?.fields?.["email"]?.[0]?.value}</p>
+            <p>{contact[0].fields["email"][0].value}</p>
           </InfoUser>
         </UserWrapper>
-        {contact.tags.length > 0 && (
+        {contact[0].tags?.length > 0 && (
           <>
             <TitleTags>Tags</TitleTags>
             <ListTags>
-              {contact.tags.map((item) => (
-                <ItemsTags key={item?.id}>{item?.tag}</ItemsTags>
-              ))}
+              {contact[0].tags
+                .map((item) => <ItemsTags key={item.id}>{item.tag}</ItemsTags>)
+                .reverse()}
             </ListTags>
           </>
         )}

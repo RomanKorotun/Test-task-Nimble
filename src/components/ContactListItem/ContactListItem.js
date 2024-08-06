@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import {
   UserWrapper,
   Image,
@@ -9,11 +8,15 @@ import {
   ItemsTags,
   ButtonClose,
 } from "./ContactListItem.styled";
-import { deleteContact } from "../../redux/operations";
 import sprite from "../../image/sprite.svg";
+import {
+  useDeleteContactMutation,
+  useGetContactsQuery,
+} from "../../redux/apiSlice";
 
 export const ContactListItem = ({ contact }) => {
-  const dispatch = useDispatch();
+  const [deleteContact] = useDeleteContactMutation();
+  const { refetch } = useGetContactsQuery();
   return (
     <>
       <UserWrapper>
@@ -35,9 +38,10 @@ export const ContactListItem = ({ contact }) => {
         </ListTags>
       )}
       <ButtonClose
-        onClick={(e) => {
+        onClick={async (e) => {
           e.stopPropagation();
-          dispatch(deleteContact(contact.id));
+          await deleteContact(contact.id);
+          await refetch();
         }}
       >
         <svg width={22} height={24}>
